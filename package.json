@@ -1,0 +1,12 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "a playground for typescript",
+  "main": "index.js",
+  "repository": "https://github.com/iversonwool/tsPlayground.git",
+  "author": "LeeHow <iversonwool@126.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "3.9.*"
+  }
+}
