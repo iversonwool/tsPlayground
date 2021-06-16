@@ -26,13 +26,55 @@ function newStudy(language: ProgrammLanguage) {
   );
 }
 
-
 //函数类型
 interface StudyLanguage {
   (language: ProgrammLanguage): void;
 }
 
-
 let studyInterface: StudyLanguage = (language) => {
-  console.log(language.name, language.age())
+  console.log(language.name, language.age());
+};
+
+// interface MultiFunc {
+//   (name: string): string;
+//   (age: number): void;
+// }
+
+// let multiFunc: MultiFunc = (name: string, age: number) => name || undefined;
+
+
+interface SMap {
+  [rank: number]: string;
+  s: number;
+
+  // 1: number;//ts(2412)
+}
+
+interface MMM {
+  [propName: string]: string;
+}
+
+
+let a: MMM = {
+  s: '111',
+  1: '1111'
+}
+
+
+// interface NNN {
+//   [propName: string]: string;
+//   age: number;
+
+// }
+
+//
+
+type AAAA = {
+  pName(name: string): void;
+}
+
+class C1 implements AAAA {
+  pName(n: string) {
+    console.log(n)
+  }
 }
