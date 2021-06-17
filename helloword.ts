@@ -4,3 +4,9 @@ function sayHello(word: string) {
 
 sayHello('hello world!')
 // sayHello(2)
+
+enum MyDay {
+  Tuesday,
+}
+
+MyDay.Monday
