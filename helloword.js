@@ -3,3 +3,6 @@ function sayHello(word) {
 }
 sayHello('hello world!');
 // sayHello(2)
+
+
+let a=1;

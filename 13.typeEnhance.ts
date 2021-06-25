@@ -23,3 +23,16 @@ declare namespace $ {
 
 $.version
 $.ajax({body: {}})
+
+
+console.log(a)
+
+import {Person}from './12.typeCompatibility'
+
+declare module './12.typeCompatibility' {
+  interface Person {
+    greet(): void;
+  }
+}
+
+Person.prototype.greet = () => { console.log('greet') }
