@@ -28,3 +28,11 @@ animal.name
 // 大类 兼容了 小类
 
 
+result = {
+  code: 1,
+  message: 'success',
+  data: [{name: 'lee', userId: '001'}]
+}
+
+
+// API_ENV = 'string'
